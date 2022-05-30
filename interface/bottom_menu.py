@@ -13,7 +13,17 @@ class BottomMenu:
         self.create_buttons()
 
     def create_buttons(self):
-        self.buttons.append(MenuElement((0, 500), 'Постройки'))
+        button_pos = 0
+        self.buttons.append(MenuElement((button_pos, 500), 'Постройки'))
+        button_pos += 160
+        self.buttons.append(MenuElement((button_pos, 500), 'Технологии'))
+        button_pos += 160
+        self.buttons.append(MenuElement((button_pos, 500), 'Фауна'))
+        button_pos += 160
+        self.buttons.append(MenuElement((button_pos, 500), 'Флора'))
+        button_pos += 160
+        self.buttons.append(MenuElement((button_pos, 500), 'Задания'))
+        button_pos += 160
 
     def draw(self, screen: Surface):
         for button in self.buttons:
