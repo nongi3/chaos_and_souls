@@ -13,7 +13,7 @@ class BottomMenu:
         self.create_buttons()
 
     def create_buttons(self):
-        button_pos = 0
+        button_pos = 10
         self.buttons.append(MenuElement((button_pos, 500), 'Постройки'))
         button_pos += 160
         self.buttons.append(MenuElement((button_pos, 500), 'Технологии'))

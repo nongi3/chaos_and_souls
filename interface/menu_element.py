@@ -20,4 +20,5 @@ class MenuElement:
 
     def draw(self, screen: Surface):
         screen.blit(self.__BACKGROUND, self.pos)
-        screen.blit(self.__FONT.render(self.name, False, (0, 0, 0)), self.pos)
+        screen.blit(self.__FONT.render(self.name, False, (0, 0, 0)),
+                    (self.pos[0] + 15, self.pos[1]+35))
